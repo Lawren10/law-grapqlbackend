@@ -13,6 +13,7 @@ var server = new apollo_server_1.ApolloServer({
   resolvers: resolvers_1.default,
 });
 server.listen().then(function (_a) {
-  var url = process.env.PORT || _a.url;
+  _a.url = process.env.PORT;
+  var url = _a.url;
   console.log("\uD83D\uDE80  Server ready at " + url);
 });
