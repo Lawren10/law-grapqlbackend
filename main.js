@@ -13,8 +13,11 @@ var server = new apollo_server_1.ApolloServer({
   resolvers: resolvers_1.default,
 });
 
-server.listen(process.env.PORT || 4000).then((res) => {
-  console.log(`\uD83D\uDE80 server ready ${res}`);
+let serverPort = process.env.PORT || 4000;
+let serverHost = "0.0.0.0";
+
+server.listen(serverPort, serverHost, function () {
+  console.log(`\uD83D\uDE80  Server ready at ${serverPort}`);
 });
 
 // server.listen().then(function (_a) {
