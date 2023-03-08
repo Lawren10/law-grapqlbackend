@@ -8,8 +8,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // var apollo_server_1 = require("apollo-server"); old code
 
 var apollo_server_1 = require("apollo-server-micro");
-import { send } from "micro";
-import Cors from "micro-cors";
+var { send } = require("micro");
+var Cors = require("micro-cors");
 var schema_1 = __importDefault(require("../schema"));
 var resolvers_1 = __importDefault(require("../resolvers"));
 var server = new apollo_server_1.ApolloServer({
@@ -19,7 +19,7 @@ var server = new apollo_server_1.ApolloServer({
 
 const cors = Cors();
 
-export default server.start().then(() => {
+server.start().then(() => {
   const handler = server.createHandler({ path: "/api/index" });
 
   return cors((req, res) => {
