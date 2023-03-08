@@ -19,7 +19,7 @@ var server = new apollo_server_1.ApolloServer({
 
 const cors = Cors();
 
-server.start().then(() => {
+export default server.start().then(() => {
   const handler = server.createHandler({ path: "/api/index" });
 
   return cors((req, res) => {
