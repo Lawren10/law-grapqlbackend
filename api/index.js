@@ -27,6 +27,8 @@ export default server.start().then(() => {
   });
 });
 
+// adding something misc
+
 // let serverPort = process.env.PORT || 4000;
 // let serverHost = "0.0.0.0";
 
