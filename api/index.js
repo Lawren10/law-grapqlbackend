@@ -7,7 +7,7 @@ var __importDefault =
 Object.defineProperty(exports, "__esModule", { value: true });
 var apollo_server_1 = require("apollo-server");
 var schema_1 = __importDefault(require("./schema"));
-var resolvers_1 = __importDefault(require("./resolvers"));
+var resolvers_1 = __importDefault(require("../resolvers"));
 var server = new apollo_server_1.ApolloServer({
   typeDefs: schema_1.default,
   resolvers: resolvers_1.default,
