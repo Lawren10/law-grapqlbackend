@@ -54,6 +54,11 @@ var server = new apollo_server_1.ApolloServer({
 //   resolvers,
 // })
 
-const handler = server.createHandler();
+const handler = server.createHandler({
+  cors: {
+    origin: "*",
+    credentials: true,
+  },
+});
 
 module.exports = { handler };
