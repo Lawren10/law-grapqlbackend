@@ -1,2 +1,3 @@
-/node_modules
-.vercel
+# Local Netlify folder
+.netlify
+/netlify/functions/apollo-graphql/node_modules

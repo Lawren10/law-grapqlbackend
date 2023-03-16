@@ -10,7 +10,7 @@ var __makeTemplateObject =
     return cooked;
   };
 Object.defineProperty(exports, "__esModule", { value: true });
-var apollo_server_1 = require("apollo-server-micro");
+var apollo_server_1 = require("apollo-server-lambda");
 var typeDefs = apollo_server_1.gql(
   templateObject_1 ||
     (templateObject_1 = __makeTemplateObject(
