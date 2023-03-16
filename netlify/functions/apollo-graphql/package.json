@@ -16,7 +16,6 @@
   "license": "MIT",
   "dependencies": {
     "apollo-server-lambda": "^2.18.2",
-    "cors": "^2.8.5",
     "graphql": "^14.1.1"
   }
 }

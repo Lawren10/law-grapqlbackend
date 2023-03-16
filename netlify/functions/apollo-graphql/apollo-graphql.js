@@ -40,7 +40,6 @@ var __importDefault =
     return mod && mod.__esModule ? mod : { default: mod };
   };
 Object.defineProperty(exports, "__esModule", { value: true });
-var cors = require("cors");
 var apollo_server_1 = require("apollo-server-lambda");
 var schema_1 = __importDefault(require("./schema"));
 var resolvers_1 = __importDefault(require("./resolvers"));
